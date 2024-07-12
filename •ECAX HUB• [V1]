@@ -166,7 +166,7 @@ UniversalTab:AddButton({
 })
 
 UniversalTab:AddButton({
-	Name = "Roblox RochipsPanel V6.0",
+	Name = "Rochips Panel V6.0",
 	Callback = function()
       		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rochips-Panel-V6-15097"))()
   	end    
@@ -303,7 +303,5 @@ Backdoor:AddButton({
 	Name = "Lalol Hub",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
-  	end    
-})loadstring(game:HttpGet("https://raw.githubusercontent.com/RScripter/Scripts/main/%E2%80%A2ECAX%20HUB%E2%80%A2%20VERSION%201%20UPDATE%202"))()-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
   	end    
 })
