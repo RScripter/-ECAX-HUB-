@@ -152,6 +152,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/mai
 GenesisFe:AddButton({
 	Name = "Studio dummy",
 	Callback = function()
-      	 loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Studio%20Dummy"))()
+      	 
   	end    
 })
