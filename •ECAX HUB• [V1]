@@ -1,0 +1,486 @@
+-- Load the library
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source"))()
+
+-- Create the main window
+local Window = OrionLib:MakeWindow({
+    Name = "•ECAX HUB•",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "OrionTest"
+})
+
+-- Tab 1: Player tab
+local PlayerTab = Window:MakeTab({
+    Name = "Player",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Movement section in Player tab
+local MovementSection = PlayerTab:AddSection({
+    Name = "Movement"
+})
+
+-- Walkspeed slider
+PlayerTab:AddSlider({
+    Name = "Walkspeed",
+    Min = 16,
+    Max = 500,
+    Default = 16,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 1,
+    ValueName = "WS",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+})
+
+-- Jump height slider
+PlayerTab:AddSlider({
+    Name = "Jump Height",
+    Min = 55,
+    Max = 500,
+    Default = 5,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 1,
+    ValueName = "Height",
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end
+})
+
+-- Tab 2: mm2 tab
+local ToolsTab = Window:MakeTab({
+    Name = "mm2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+-- Tools section in Tools tab
+local ToolsSection = ToolsTab:AddSection({
+    Name = "mm2"
+})
+
+-- yahrm button
+ToolsTab:AddButton({
+    Name = "yahrm",
+    Callback = function()
+        -- Replace with your tool script URL
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+    end
+})
+
+-- symphony hub button
+ToolsTab:AddButton({
+    Name = "symphony hub",
+    Callback = function()
+        -- Replace with your tool script URL
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))()
+    end
+})
+
+-- Script: Break in 2 tab
+local ScriptTab = Window:MakeTab({
+    Name = "Break in 2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local ScriptSection = ScriptTab:AddSection({
+    Name = "Break in 2"
+})
+
+-- bruh button
+ScriptTab:AddButton({
+    Name = "OP",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+    end
+})
+
+ScriptTab:AddButton({
+	Name = "JN HH Gaming",
+	Callback = function()
+      		loadstring(game:HttpGet("https://freenote.biz/raw/qLlMYwbVNd",true))()
+  	end    
+})
+
+-- Tab : Universal tab
+local UniversalTab = Window:MakeTab({
+    Name = "Universal",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local UniversalSection = UniversalTab:AddSection({
+    Name = "Universal Scripts"
+})
+
+UniversalTab:AddButton({
+	Name = "VHUB",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/On-Discord/Created/VexHub"))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Ghost Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Sky Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))() 
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Inf store",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Fly Gui Neon",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-Gui-V3-Dark-Theme-11884"))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Troll Panel",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Tiger Hub v3",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20its%20Back"))()
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Rochips Panel V6.0",
+	Callback = function()
+      		
+  	end    
+})
+
+UniversalTab:AddButton({
+	Name = "Rochips Panel",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rochips-Panel-V6-15097"))()
+  	end    
+})
+
+-- Tab : Blox fruits
+local BloxFruitsTab = Window:MakeTab({
+    Name = "Blox fruits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local BloxFruitsSection = BloxFruitsTab:AddSection({
+    Name = "Blox Fruits"
+})
+
+BloxFruitsTab:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+BloxFruitsTab:AddButton({
+	Name = "Min Gaming Update New",
+	Callback = function()
+      		_G.LoadUiFast = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CheemsNhuChiAl/MinGamingHub/main/mingamingupdatenew"))()
+  	end    
+})
+
+local FeTab = Window:MakeTab({
+	Name = "Fe scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = FeTab:AddSection({
+	Name = "Fe Scripts"
+})
+
+FeTab:AddButton({
+	Name = "Fe Script Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Chat Bypasser [Maybe It Does Not Work]",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-BetterBypasser-15478"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Animation Editor Fe",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Gazer-FE-Animation-Editor-14508"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "The Honored One",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cortzalno666/NectoVerse-Industries-Data/master/Scripts%20Folder/Honored.lua'),true))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Fe Bypass Gui",
+	Callback = function()
+      		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\103\48\48\108\88\112\108\111\105\116\101\114\47\103\48\48\108\88\112\108\111\105\116\101\114\47\109\97\105\110\47\70\101\37\50\48\98\121\112\97\115\115\34\44\32\116\114\117\101\41\41\40\41\10")()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Punch Fling",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+  	end    
+})
+
+local Section = FeTab:AddSection({
+	Name = "Genesis Fe"
+})
+
+FeTab:AddButton({
+	Name = "AK - 47",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Ban Hammer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Banisher",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Banisher"))(
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "DearSister",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Dearsister"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Gale Fighter",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Goner",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Good Cop Bad Cop",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Karambit",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Name",
+	Callback = function()
+      		
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Krystal Dance",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Lightning Cannon",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Lightning%20Cannon"))()
+  	end    
+})
+
+
+FeTab:AddButton({
+	Name = "Name",
+	Callback = function()
+      		Fe
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Linked Sword",
+	Callback = function()
+      		DisableFlingHealthBar = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Linked%20Sword"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "MiniGun",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Name",
+	Callback = function()
+      		Fe
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Motorcycle",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Motorcycle"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Neko💀",
+	Callback = function()
+      		DisableFlingHealthBar = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neko"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Neptunian V",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Pistol",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Sadlist Genocider",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sadist%20Genocider"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Sniper",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Star Glitcher",
+	Callback = function()
+      		DisableFX = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Star%20Glitcher"))()
+  	end    
+})
+
+FeTab:AddButton({
+	Name = "Studio Dummy",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Studio%20Dummy"))()
+  	end    
+})
+
+-- Tab : Nerd
+local Nerd = Window:MakeTab({
+    Name = "Synergy Scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local NerdSection = Nerd:AddSection({
+	Name = "Nerd Scripts"
+})
+
+Nerd:AddButton({
+	Name = "Rizz Hub",
+	Callback = function()
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua",true))())
+  	end    
+})
+
+Nerd:AddButton({
+	Name = "Synergy Hub",
+	Callback = function()
+      		print(loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/main/SynergyHub/loader.lua", true))())
+  	end    
+})
+
+local Backdoor = Window:MakeTab({
+    Name = "Backdoor",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local BackdoorSection = Backdoor:AddSection({
+	Name = "Backdoors"
+})
+
+Backdoor:AddButton({
+	Name = "Tnt Master's SS Backdoor",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/hi4mDR43"))()
+  	end    
+})
+
+Backdoor:AddButton({
+	Name = "Backdoor.exe V6",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua'))()
+  	end    
+})
+
+Backdoor:AddButton({
+	Name = "Lalol Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+  	end    
+})
