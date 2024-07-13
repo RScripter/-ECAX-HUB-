@@ -250,6 +250,13 @@ FeTab:AddButton({
   	end    
 })
 
+FeTab:AddButton({
+	Name = "Sus Missile",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ChainOnToo/Unknown/main/Sus%20Missile%20Script"))()
+  	end    
+})
+
 -- Tab : Nerd
 local Nerd = Window:MakeTab({
     Name = "Synergy Scripts",
@@ -303,5 +310,46 @@ Backdoor:AddButton({
 	Name = "Lalol Hub",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+  	end    
+})
+
+local Bedwars = Window:MakeTab({
+    Name = "Bedwars",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Bedwars:AddSection({
+	Name = "Bedwars Scripts"
+})
+
+Bedwars:AddButton({
+	Name = "Vape V4",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+
+local DaHood = Window:MakeTab({
+    Name = "Da Hood",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = DaHood:AddSection({
+	Name = "Section"
+})
+
+DaHood:AddButton({
+	Name = "Swag Mode",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+  	end    
+})
+
+DaHood:AddButton({
+	Name = "Dahood GUI Given By FoldUpSaturn310",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Log1a/PublicScripts/main/DaHoodGUI"))()
   	end    
 })
