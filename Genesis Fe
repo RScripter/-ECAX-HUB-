@@ -1,157 +1,93 @@
--- Load the library
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source"))()
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/GdN5iRbt"))()
+local Window = Library.CreateLib("Genesis Fe", "Ocean")
 
-local GenesisFe = Window:MakeTab({
-    Name = "Fe Scripts",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
+--Tabs
 
-GenesisFe:AddButton({
-	Name = "AK 47",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
-  	end    
-})
+local Tab1 = Window:NewTab("Scripts")
+local Section = Tab1:NewSection("Fe Scripts")
 
-GenesisFe:AddButton({
-	Name = "Hammer",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
-  	end    
-})
+--Buttons
 
-GenesisFe:AddButton({
-	Name = "Banisher",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Banisher"))()
-  	end    
-})
+Section:NewButton("Star Glitcher", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Star%20Glitcher"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Dear Sister",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Dearsister"))()
-  	end    
-})
+Section:NewButton("Sadist Genocider", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sadist%20Genocider"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Gale Fighter",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
-  	end    
-})
+Section:NewButton("Sniper", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Goner",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner"))()
+Section:NewButton("Pistol", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
+end)
 
-  	end    
-})
+Section:NewButton("Neptunian V", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Good Cop Bad Cop",
-	Callback = function()
-      	 loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
-  	end    
-})
+Section:NewButton("Lightning Cannon", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Lightning%20Cannon"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Karambit",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
-  	end    
-})
+Section:NewButton("AK - 47", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Krystal Dance",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
-  	end    
-})
+Section:NewButton("Ban Hammer", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Lightning Cannon",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Lightning%20Cannon"))()
-  	end    
-})
+Section:NewButton("Banisher", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Banisher"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Linked Sword",
-	Callback = function()
-      		DisableFlingHealthBar = false
+Section:NewButton("Dear Sister", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Dearsister"))()
+end)
+
+Section:NewButton("Gale Fighter", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+end)
+
+Section:NewButton("Good Cop Bad Cop", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
+end)
+
+Section:NewButton("Karambit", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Karambit"))()
+end)
+
+Section:NewButton("Krystal Dance", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
+end)
+
+Section:NewButton("Linked Sword", "Print Button", function()
+DisableFlingHealthBar = false
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Linked%20Sword"))()
-  	end    
-})
+end)
 
-GenesisFe:AddButton({
-	Name = "Minigun",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
+Section:NewButton("Minigun", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
+end)
 
-  	end    
-})
+Section:NewButton("Motorcycle", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Motorcycle"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Motor cycle",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Motorcycle"))()
-  	end    
-})
-
-
-GenesisFe:AddButton({
-	Name = "Neko",
-	Callback = function()
-      		DisableFlingHealthBar = false
+Section:NewButton("neko", "Print Button", function()
+DisableFlingHealthBar = false
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neko"))()
-  	end    
-})
+end)
 
-GenesisFe:AddButton({
-	Name = "Neptunian V",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
-  	end    
-})
+Section:NewButton("Goner", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Goner"))()
+end)
 
-GenesisFe:AddButton({
-	Name = "Pistol",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Pistol"))()
-  	end    
-})
-
-GenesisFe:AddButton({
-	Name = "Sniper",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
-  	end    
-})
-
-GenesisFe:AddButton({
-	Name = "Sadist Genocider",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sadist%20Genocider"))()
-  	end    
-})
-
-GenesisFe:AddButton({
-	Name = "Star Glitcher",
-	Callback = function()
-      		DisableFX = false
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Star%20Glitcher"))()
-  	end    
-})
-
-GenesisFe:AddButton({
-	Name = "Studio dummy",
-	Callback = function()
-      	 
-  	end    
-})
+Section:NewButton("Studio Dummy", "Print Button", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Studio%20Dummy"))()
+end)
