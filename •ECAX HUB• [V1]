@@ -257,6 +257,13 @@ FeTab:AddButton({
   	end    
 })
 
+FeTab:AddButton({
+	Name = "Genesis Fe Hub",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/RScripter/-ECAX-HUB-/main/Genesis%20Fe'))()	
+end    
+})
+
 -- Tab : Nerd
 local Nerd = Window:MakeTab({
     Name = "Synergy Scripts",
