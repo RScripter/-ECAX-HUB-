@@ -1,0 +1,266 @@
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+
+local GUI = Mercury:Create{
+    Name = "•ECAX HUB V2•",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "https://github.com/deeeity/mercury-lib"
+}
+
+local MM2 = GUI:Tab{
+	Name = "MM2",
+	Icon = "rbxassetid://18513586727"
+}
+
+-- Add a button to the MM2 tab
+MM2:Button{
+    Name = "Yahrm",
+    Description = "This is a button that prints a mm2 scropt",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+    end
+}
+
+-- Add a button to the MM2 tab 
+MM2:Button{
+    Name = "Symphony hub",
+    Description = "This is a button that prints a MM2 script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))()
+    end
+}
+
+local BREAKIN2 = GUI:Tab{
+	Name = "BREAK IN 2",
+	Icon = "rbxassetid://18513882846"
+}
+
+-- Add a button to the Game tab
+BREAKIN2:Button{
+    Name = "BREAKING BLITZ",
+    Description = "This is a button that prints a BREAK IN 2 script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+    end
+}
+
+-- Add a button to the Game tab
+BREAKIN2:Button{
+    Name = "JN HH GAMING",
+    Description = "This is a button that prints a BREAK IN 2 script",
+    Callback = function()
+        loadstring(game:HttpGet("https://freenote.biz/raw/qLlMYwbVNd",true))()
+    end
+}
+
+local UNIVERSAL = GUI:Tab{
+	Name = "UNIVERSAL",
+	Icon = "rbxassetid://18514169655"
+}
+
+-- Add a button to the Game tab
+UNIVERSAL:Button{
+    Name = "VHUB",
+    Description = "This is a button that prints a game script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/On-Discord/Created/VexHub"))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "GHOST HUB",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "SKY HUB",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/SkyHub.txt"))() 
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "Name",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wzB1Qh78'),true))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "INF STORE",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinite-Store/Infinite-Store/main/main.lua"))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "FLY GUI V3",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-Gui-V3-Dark-Theme-11884"))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "TROLL PANEL",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "TIGER HUB V3",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20its%20Back"))()
+    end
+}
+
+-- Add a button to the UNIVERSAL tab
+UNIVERSAL:Button{
+    Name = "ROCHIPS PANEL",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rochips-Panel-V6-15097"))()
+    end
+}
+
+UNIVERSAL:Button{
+    Name = "RIZZ HUB - SYNERGY NETWORK",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua",true))()
+    end
+}
+
+UNIVERSAL:Button{
+    Name = "SYNERGY HUB - SYNERGY NETWORK",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/main/SynergyHub/loader.lua"))()
+    end
+}
+
+local BloxFruit = GUI:Tab{
+	Name = "BLOX FRUITS",
+	Icon = "rbxassetid://18514615889"
+}
+
+BloxFruit:Button{
+    Name = "REDZ HUB",
+    Description = "This is a button that prints a BLOX FRUITS script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+    end
+}
+
+BloxFruit:Button{
+    Name = "MIN GAMING HUB",
+    Description = "This is a button that prints a BLOX FRUITS script",
+    Callback = function()
+        _G.LoadUiFast = false
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CheemsNhuChiAl/MinGamingHub/main/mingamingupdatenew"))()
+    end
+}
+
+local FE = GUI:Tab{
+	Name = "FE SCRIPTS",
+	Icon = "rbxassetid://8569322835"
+}
+
+FE:Button{
+    Name = "FE SCRIPT HUB",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+    end
+}
+
+FE:Button{
+    Name = "BetterBypasser(idk if it works)",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-BetterBypasser-15478"))()
+    end
+}
+
+FE:Button{
+    Name = "FE ANIMATION EDITOR",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Gazer-FE-Animation-Editor-14508"))()
+    end
+}
+
+FE:Button{
+    Name = "THE HONORED ONE",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Cortzalno666/NectoVerse-Industries-Data/master/Scripts%20Folder/Honored.lua'),true))()
+    end
+}
+
+FE:Button{
+    Name = "FE BYPASS(idk if fe)",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\103\48\48\108\88\112\108\111\105\116\101\114\47\103\48\48\108\88\112\108\111\105\116\101\114\47\109\97\105\110\47\70\101\37\50\48\98\121\112\97\115\115\34\44\32\116\114\117\101\41\41\40\41\10")()
+    end
+}
+
+FE:Button{
+    Name = "FE PUNCH KILL/FLING",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'),true))()
+    end
+}
+
+local BEDWARS = GUI:Tab{
+	Name = "BEDWARS",
+	Icon = "rbxassetid://8569322835"
+}
+
+BEDWARS:Button{
+    Name = "VAPE V4",
+    Description = "This is a button that prints a BEDWARS script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end
+}
+
+local DAHOOD = GUI:Tab{
+	Name = "DA HOOD",
+	Icon = "rbxassetid://8569322835"
+}
+
+DAHOOD:Button{
+    Name = "SWAGMODE",
+    Description = "This is a button that prints a DA HOOD SCRIPT",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    end
+}
+
+DAHOOD:Button{
+    Name = "DAHOOD GUI GIVEN BY FOLDUPSATURN310",
+    Description = "This is a button that prints a DA HOOD SCRIPT",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Log1a/PublicScripts/main/DaHoodGUI"))()
+    end
+}
