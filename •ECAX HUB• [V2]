@@ -180,7 +180,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CheemsNhuChiAl/MinGam
 
 local FE = GUI:Tab{
 	Name = "FE SCRIPTS",
-	Icon = "rbxassetid://8569322835"
+	Icon = "rbxassetid://18515802980"
 }
 
 FE:Button{
@@ -233,7 +233,7 @@ FE:Button{
 
 local BEDWARS = GUI:Tab{
 	Name = "BEDWARS",
-	Icon = "rbxassetid://8569322835"
+	Icon = "rbxassetid://18515912404"
 }
 
 BEDWARS:Button{
@@ -246,7 +246,7 @@ BEDWARS:Button{
 
 local DAHOOD = GUI:Tab{
 	Name = "DA HOOD",
-	Icon = "rbxassetid://8569322835"
+	Icon = "rbxassetid://18516009230"
 }
 
 DAHOOD:Button{
