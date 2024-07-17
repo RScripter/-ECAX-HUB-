@@ -264,3 +264,24 @@ DAHOOD:Button{
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Log1a/PublicScripts/main/DaHoodGUI"))()
     end
 }
+
+local BladeBall = GUI:Tab{
+	Name = "Blade Ball",
+	Icon = "rbxassetid://18516544564"
+}
+
+BladeBall:Button{
+    Name = "PITBULL",
+    Description = "This is a button that prints a Blade Boll script",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-PitbullHub-15570"))()
+    end
+}
+
+BladeBall:Button{
+    Name = "🧔DRAKE EMOJI",
+    Description = "This is a button that prints a Blade Boll script",
+    Callback = function()
+        loadstring(game:HttpGet("https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true"))()
+    end
+}
