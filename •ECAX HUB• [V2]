@@ -155,6 +155,22 @@ UNIVERSAL:Button{
     end
 }
 
+UNIVERSAL:Button{
+    Name = "DELTA KEYBOARD",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+    end
+}
+
+UNIVERSAL:Button{
+    Name = "INDEX HUB",
+    Description = "This is a button that prints a UNIVERSAL script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IndexZHub/Loader/main/Loader"))()
+    end
+}
+
 local BloxFruit = GUI:Tab{
 	Name = "BLOX FRUITS",
 	Icon = "rbxassetid://18514615889"
@@ -188,6 +204,14 @@ FE:Button{
     Description = "This is a button that prints a FE script",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+    end
+}
+
+FE:Button{
+    Name = "FE SCRIPT HUB 2",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/wzB1Qh78'),true))()
     end
 }
 
@@ -231,6 +255,14 @@ FE:Button{
     end
 }
 
+FE:Button{
+    Name = "GENESIS FE",
+    Description = "This is a button that prints a FE script",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/ZHqpLlHN/raw"))()
+    end
+}
+
 local BEDWARS = GUI:Tab{
 	Name = "BEDWARS",
 	Icon = "rbxassetid://18515912404"
@@ -271,16 +303,16 @@ local BladeBall = GUI:Tab{
 }
 
 BladeBall:Button{
-    Name = "PITBULL",
-    Description = "This is a button that prints a Blade Boll script",
+    Name = "Pitbull",
+    Description = "This is a button that prints a game script",
     Callback = function()
         loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-PitbullHub-15570"))()
     end
 }
 
 BladeBall:Button{
-    Name = "🧔DRAKE EMOJI",
-    Description = "This is a button that prints a Blade Boll script",
+    Name = "🧔",
+    Description = "This is a button that prints a game script",
     Callback = function()
         loadstring(game:HttpGet("https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true"))()
     end
